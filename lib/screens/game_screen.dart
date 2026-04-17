@@ -58,7 +58,7 @@ class _ImagePageState extends State<ImagePage> {
                         changeimage();
                       });
                     },
-                  child: Image.asset('lib/images/image-$leftimagenumber.png',width: 100.0,),
+                  child: Image.asset('assets/images/image-$leftimagenumber.png',width: 100.0,),
                 ),
               ),
               ),
@@ -71,7 +71,7 @@ class _ImagePageState extends State<ImagePage> {
                         changeimage();
                       });
                     },
-                    child: Image.asset('lib/images/image-$rightimagenumber.png',width: 100.0,),
+                    child: Image.asset('assets/images/image-$rightimagenumber.png',width: 100.0,),
                   ),
                 ),
               ),

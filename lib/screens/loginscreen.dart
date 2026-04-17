@@ -19,7 +19,7 @@ class _login_screenState extends State<login_screen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.asset('lib/images/download.jpg',height: 150),
+                Image.asset('assets/images/download.jpg',height: 150),
                 SizedBox(height: 20),
                 Text('SIGN IN '),
             

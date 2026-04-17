@@ -17,7 +17,7 @@ import 'naghamat_screen.dart';
             children: [
               CircleAvatar(
                 radius: 50.0,
-                backgroundImage: AssetImage('lib/images/shefa.jpeg'),
+                backgroundImage: AssetImage('assets/images/shefa.jpeg'),
               ),
               Text('shefa tamimi',
                 style: TextStyle(

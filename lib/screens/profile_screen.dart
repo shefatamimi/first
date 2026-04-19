@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'game_screen.dart';
 import 'naghamat_screen.dart';
+import 'claculater.dart';
  class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
 
@@ -119,6 +120,29 @@ import 'naghamat_screen.dart';
                   ),
                 ),
               ),
+              SizedBox(height: 50,),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25),
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Claculaterscreen(),
+                      ),
+                    );
+                  },
+                  child: Container(
+                    padding: EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                      color: Colors.pinkAccent,
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: Center(child: Text('Go To calculater')),
+                  ),
+                ),
+              ),
+
 
 
 

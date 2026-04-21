@@ -11,60 +11,61 @@ class Product {
     required this.image,
   });
 }
+
 // list of products
 List<Product> products = [
   Product(
     id: 1,
     price: 59,
-    title: "سماعات لاسلكية",
-    subTitle: "جودة صوت عالية",
-    image: "images/airpod.png",
+    title: "Wireless Earbuds",
+    subTitle: "High quality sound",
+    image: "assets/images/airpod.png",
     description:
-    "لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا.",
+    "High-quality wireless earbuds with clear sound and long battery life. Perfect for daily use and calls.",
   ),
   Product(
     id: 2,
     price: 1099,
-    title: "جهاز موبايل",
-    subTitle: "وأصبح للموبايل قوة",
-    image: "images/mobile.png",
+    title: "Smart Phone",
+    subTitle: "Power in your hands",
+    image: "assets/images/mobile.png",
     description:
-    "لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا.",
+    "A powerful smartphone with fast performance, advanced camera system, and modern design.",
   ),
   Product(
     id: 3,
     price: 39,
-    title: "نظارات ثلاثية الأبعاد",
-    subTitle: "لنقلك للعالم الافتراضي",
-    image: "images/class.png",
+    title: "VR Glasses",
+    subTitle: "Enter the virtual world",
+    image: "assets/images/class.png",
     description:
-    "لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا.",
+    "Experience immersive virtual reality with these lightweight and comfortable VR glasses.",
   ),
   Product(
     id: 4,
     price: 56,
-    title: "سماعات",
-    subTitle: "لساعات استماع طويلة",
-    image: "images/headset.png",
+    title: "Headset",
+    subTitle: "Long listening comfort",
+    image: "assets/images/headset.png",
     description:
-    "لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا.",
+    "Comfortable headset with deep bass and clear audio, perfect for music and gaming.",
   ),
   Product(
     id: 5,
     price: 68,
-    title: "مسجل صوت",
-    subTitle: "سجل اللحظات المهمة حولك",
-    image: "images/speaker.png",
+    title: "Voice Recorder",
+    subTitle: "Capture important moments",
+    image: "assets/images/speaker.png",
     description:
-    "لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا.",
+    "High-quality voice recorder for meetings, lectures, and personal notes with clear audio capture.",
   ),
   Product(
     id: 6,
     price: 39,
-    title: "كاميرات كمبيوتر",
-    subTitle: "بجودة ودقة صورة عالية",
-    image: "images/camera.png",
+    title: "Web Camera",
+    subTitle: "High resolution video",
+    image: "assets/images/camera.png",
     description:
-    "لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا.",
+    "HD webcam with sharp image quality, perfect for video calls and online meetings.",
   ),
 ];

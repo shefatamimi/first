@@ -1,5 +1,11 @@
 import 'package:first/constant.dart';
+import 'package:first/widget/home/product_cart.dart';
 import 'package:flutter/material.dart';
+import '../../screens/details_screen.dart';
+import '../details/details_body.dart';
+import 'product_cart.dart';
+import 'package:first/product.dart'; // 👈 هذا المهم
+
 
 class HomeBody extends StatelessWidget {
   const HomeBody({super.key});
@@ -7,7 +13,9 @@ class HomeBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
+      bottom: false,
       child: Column(
+        mainAxisSize: MainAxisSize.min,
         children: [
           SizedBox(height: kDefaultPadding / 2),
 
@@ -19,6 +27,8 @@ class HomeBody extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: kBackgroundColor,
                     borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(10),
+                      topRight: Radius.circular(10),
                       bottomLeft: Radius.circular(40),
                       bottomRight: Radius.circular(40),
                     ),
@@ -30,56 +40,22 @@ class HomeBody extends StatelessWidget {
                     ],
                   ),
                 ),
-                ProductCard(),
+                ListView.builder(
+                  itemCount: products.length,
+                  itemBuilder: (context, index) => ProductCard(
+                    itemIndex: index,
+                    product: products[index],
+                    Press: () {
+                      Navigator.push(context,MaterialPageRoute(builder: (context) => const DetailsScreen()));
+                    },
+                  ),
+                  ),
 
               ],
             ),
           ),
         ],
       ),
-    );
-  }
-}
-class ProductCard extends StatelessWidget {
-  const ProductCard({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return  Container(
-      margin: EdgeInsets.symmetric(
-        horizontal: kDefaultPadding,
-        vertical: kDefaultPadding / 2,
-      ),
-      height: 190,
-      //color: Colors.green,
-      child: Stack(
-          alignment: AlignmentGeometry.bottomCenter,
-          children: [
-            Container(
-                height: 166.0,
-                //width: 166.0,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(22),
-                    color: Colors.white,
-                    boxShadow: [
-                      BoxShadow(
-                        blurRadius: 25,
-                        offset: Offset(0, 15),
-                        color: Colors.black26,
-                      ),
-                    ]
-                )
-            ),
-            Positioned(child: Container(
-              height: 160.0,
-              width: 160.0,
-              child:Image.asset('assets/images/headset.png'),
-            ))
-          ]
-      ),
-
-
-
     );
   }
 }
